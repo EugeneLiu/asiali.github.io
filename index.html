@@ -9,7 +9,7 @@
     <body>
         weicome,
         {%for page in site.pages %}
-            {%if page.title == 'index' %}
+            {%if page.title == '区块列表' %}
                 <a href="{{ page.url }}">点击进入</a>
             {%endif %}
         {% endfor %}
