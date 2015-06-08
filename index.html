@@ -1,9 +1,17 @@
 ---
-layout: default
 ---
-
-<div class="home">
-
-
-
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        weicome,
+        {%for page in site.pages %}
+            {%if page.title == 'index' %}
+                <a href="{{ page.url }}">点击进入</a>
+            {%endif %}
+        {% endfor %}
+    </body>
+</html>
